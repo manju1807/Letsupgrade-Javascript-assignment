@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date-time</title>
+</head>
+<body>
+    <style>
+		body {
+			font-family:sans-serif;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			margin-top: 50px;
+		}
+		button {
+			padding: 10px 20px ;
+			font-size: 20px;
+			border: none;
+			background-color: #32d98e;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+        #datetime {
+			margin-top: 20px;
+            padding-top: 10%;
+			font-size: 30px;
+		}
+	</style>
+
+    <h1>Click the button to display the current date and time:</h1>
+    <button onclick="DateTime()"> click here !</button>
+    <p id="datetime"></p>
+    <script>
+        function DateTime() {
+            var d = new Date();
+            document.getElementById("datetime").innerHTML = d;
+        }      
+    </script>
+</body>
+</html>
